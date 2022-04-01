@@ -200,7 +200,7 @@ h3 {
     align-items: center;
     height: 92px;
     width: 170px;
-    background-color: #F5F4FA;
+    border: 1px solid #AFB1B8;
     border-radius: 4px;
      
 }
@@ -208,6 +208,14 @@ h3 {
     border: 1px solid #2196F3; 
 }
 .svg-second:hover .icon-list {
+    fill: #2196F3;
+    
+}
+
+.svg-second:focus {
+    border: 1px solid #2196F3; 
+}
+.svg-second:focus .icon-list {
     fill: #2196F3;
     
 }
@@ -343,14 +351,15 @@ margin-right: 0;
 .society {
     margin-top: 16px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .society-list {
-    width: 20px;
-    display: flex;
-    justify-content: center;
-    
+    width: 44px;   
 }
+.society-list:not(kast-child) {
+    margin-right: 10px ;
+}
+
 .society-item {
     width: 44px;
     height: 44px;
@@ -367,7 +376,12 @@ margin-right: 0;
 .society-item:hover .society-icon {
     fill: #FFFFFF;
 }
-
+.society-item:focus {
+    background-color: #2196F3;
+}
+.society-item:focus .society-icon {
+    fill: #FFFFFF;
+}
 .society-icon {
     display: flex;
     fill: #AFB1B8;
@@ -410,8 +424,19 @@ margin-right: 0;
 
 }
 .come {
-    display: block;
     margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
+.footer {
+    background: rgba(255, 255, 255, 0.1);
 }
 .logo-second {
     font-family: 'Raleway';
@@ -507,12 +532,17 @@ margin-right: 0;
     background: #F5F4FA;
     color: #212121;
     
-    width: 128px;
+    /* width: 128px; */
     border: transparent;
     border-radius: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
 }
 .button-li {
     display: inline-block;
+    
 }
 .button-li:not(:last-child) {
     margin-right: 8px;
@@ -539,9 +569,12 @@ margin-right: 0;
     margin-top: 30px;
     
 }
-.example-img:hover ,
-.example-img:focus {
-    border: 1px solid #EEEEEE;
+.last-menu{
+    display: block;
+    text-decoration: none;
+}
+.last-menu:hover ,
+.last-menu:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16)
 }
 .menu-border {
