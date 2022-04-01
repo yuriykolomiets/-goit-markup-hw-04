@@ -356,7 +356,7 @@ margin-right: 0;
 .society-list {
     width: 44px;   
 }
-.society-list:not(kast-child) {
+.society-list:not(:last-child) {
     margin-right: 10px ;
 }
 
